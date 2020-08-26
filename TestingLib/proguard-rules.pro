@@ -20,3 +20,7 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 -keep public class * extends android.app.Activity
+-keep class android.support.v4.app.** { *; }
+-keep interface android.support.v4.app.** { *; }
+-keep class android.support.v7.app.** { *; }
+-keep interface android.support.v7.app.** { *; }
