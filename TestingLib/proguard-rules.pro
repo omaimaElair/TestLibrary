@@ -19,7 +19,9 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
--keep class com.example.testinglib.Toasting**
+-keep class com.example.testinglib.Toasting{
+    void show(android.content.Context);
+}
 -keep public class * extends android.app.Activity
 -keep class android.support.v4.app.** { *; }
 -keep interface android.support.v4.app.** { *; }
